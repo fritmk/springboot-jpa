@@ -5,6 +5,7 @@ import com.jpabook.jpashop.domain.item.Item;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.aspectj.weaver.ast.Or;
 
 @Entity
 @Getter
@@ -27,6 +28,34 @@ public class OrderItem {
     private int orderPrice; // 주문 당시 가격
     private int count; //  주문 수량
 
+    // new OrderItem() 하는 것을 막는다.
+    protected OrderItem () {
 
+    }
 
+    // -- 생성 메서드
+    public static OrderItem createOrderItem(Item item,  int orderPrice, int count) {
+        OrderItem orderItem = new OrderItem();
+        orderItem.setItem(item);
+        orderItem.setOrderPrice(orderPrice);
+        orderItem.setCount(count);
+
+       item.removeStock(count);
+       return orderItem;
+
+    }
+
+    // -- 비즈니스 로직
+    public void cancel() {
+        getItem().addStock(count); // 재고 수량을 원복해준다.
+    }
+
+    // -- 조회 로직
+
+    /**
+     * 주문상품 전체 가격 조회
+     */
+    public int getTotalPrice() {
+        return getOrderPrice() * getCount();
+    }
 }
