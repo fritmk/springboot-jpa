@@ -13,7 +13,7 @@ public class ItemRepository {
 
     private final EntityManager em;
 
-    private void save(Item item) {
+    public void save(Item item) {
 
         // 아이템은 처음에 아이디가 없음.
         if (item.getId() == null) {
