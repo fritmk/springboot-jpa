@@ -11,10 +11,15 @@ spring:
       hibernate:
 #        show_sql: true # sysout 으로 출력됨
         format_sql: true
+#  devtools:
+#    restart:
+#      enabled: false
+
 logging:
   level:
     org.hibernate.SQL: debug
     org.hibernate.orm.jdbc.bind: trace
+
 
 
 
