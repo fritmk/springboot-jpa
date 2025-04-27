@@ -1,4 +1,4 @@
-package com.jpabook.jpashop.controller;
+package jpabook.jpashop.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.LoggerFactory;

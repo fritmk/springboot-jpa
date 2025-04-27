@@ -1,9 +1,8 @@
-package com.jpabook.jpashop.repository;
+package jpabook.jpashop.repository;
 
-import com.jpabook.jpashop.domain.OrderStatus;
+import jpabook.jpashop.domain.OrderStatus;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Service;
 
 @Getter
 @Setter

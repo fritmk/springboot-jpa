@@ -1,7 +1,6 @@
-package com.jpabook.jpashop.repository;
+package jpabook.jpashop.repository;
 
-import com.jpabook.jpashop.domain.Order;
-import com.jpabook.jpashop.domain.OrderStatus;
+import jpabook.jpashop.domain.Order;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import lombok.RequiredArgsConstructor;

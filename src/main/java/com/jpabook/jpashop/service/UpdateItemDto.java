@@ -1,4 +1,4 @@
-package com.jpabook.jpashop.service;
+package jpabook.jpashop.service;
 
 import lombok.Getter;
 import lombok.Setter;

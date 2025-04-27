@@ -1,4 +1,4 @@
-package com.jpabook.jpashop.domain;
+package jpabook.jpashop.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Entity

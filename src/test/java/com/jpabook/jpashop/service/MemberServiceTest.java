@@ -1,7 +1,7 @@
-package com.jpabook.jpashop.service;
+package jpabook.jpashop.service;
 
-import com.jpabook.jpashop.domain.Member;
-import com.jpabook.jpashop.repository.MemberRepository;
+import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.repository.MemberRepository;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
