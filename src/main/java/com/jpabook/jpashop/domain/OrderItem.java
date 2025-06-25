@@ -1,7 +1,7 @@
-package jpabook.jpashop.domain;
+package com.jpabook.jpashop.domain;
 
 
-import jpabook.jpashop.domain.item.Item;
+import com.jpabook.jpashop.domain.item.Item;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

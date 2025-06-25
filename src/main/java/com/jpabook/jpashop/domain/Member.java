@@ -1,4 +1,4 @@
-package jpabook.jpashop.domain;
+package com.jpabook.jpashop.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
