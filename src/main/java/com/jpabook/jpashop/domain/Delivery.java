@@ -23,5 +23,13 @@ public class Delivery {
     @Enumerated(EnumType.STRING) // 꼭 스트링으로.
     private DeliveryStatus status; // READY, COMP
 
+    public static Delivery CreateDelivery(Address address) {
+        Delivery delivery = new Delivery();
+        delivery.setAddress(address);
+        delivery.setStatus(DeliveryStatus.READY);
+        return delivery;
+    }
+
+
 
 }

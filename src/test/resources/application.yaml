@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
-      ddl-auto: create # 애플리케이션 실행 시점에 내가 가지고 있는 엔티티 기준으로 다 지우고 다시 생성함.
+      ddl-auto: create-drop # 애플리케이션 실행 시점에 내가 가지고 있는 엔티티 기준으로 다 지우고 다시 생성함.
       ## spring boot 는 create-drop으로 기본적으로 돌아감. = 마지막에 다시 또 drop 한다. 자원 정리 해줌
     properties:
       hibernate:
