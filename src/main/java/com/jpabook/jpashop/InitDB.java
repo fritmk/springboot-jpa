@@ -28,12 +28,12 @@ public class InitDB {
         private final EntityManager em;
         public void dbInit() {
             Member member = new Member();
-            member.setName("riku");
+            member.setName("fear1");
             member.setAddress(new Address("1","1","1"));
             em.persist(member);
 
             Member member2 = new Member();
-            member2.setName("mark");
+            member2.setName("fear2");
             member2.setAddress(new Address("1","1","1"));
             em.persist(member2);
 
